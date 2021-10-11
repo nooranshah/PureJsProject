@@ -24,6 +24,7 @@ function fetchIssues() {
 
 }
 document.getElementById('issueInputForm').addEventListener('submit', saveIssue);
+
 function saveIssue(e) {
     var issueId = chance.guid();
     var issueDesc = document.getElementById('issueDescInput').value;
