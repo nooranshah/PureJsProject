@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer</title>
+    </head>
+
+    <body>
+        <button onclick="onStart()">Start</button>
+        <button onclick="onStop()">Stop</button>
+        <div id="numberId">0</div>
+    </body>
+
+    <script>
+        let number = 0;
+        let timer;
+        function onStart(){
+             timer =  setInterval(function(){
+                number++;
+                document.getElementById('numberId').innerText=number;
+            }, 1000);
+
+        }
+        function onStop(){
+            clearInterval(timer);
+        }
+
+    </script>
+</html>
